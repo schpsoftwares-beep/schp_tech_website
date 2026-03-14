@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "SCHP Technologies"
+version = "1.0.0"
+id = "artifacts/schp-website"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 24760
+name = "web"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/schp-website run dev"
+
+[services.env]
+PORT = "24760"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/schp-website", "run", "build"]
+publicDir = "artifacts/schp-website/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"

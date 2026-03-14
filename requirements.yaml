@@ -1,0 +1,18 @@
+packages:
+  "framer-motion": "For smooth page transitions, scroll reveals, and micro-interactions"
+  "date-fns": "For formatting review dates elegantly"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility for safely merging Tailwind CSS classes without style conflicts"
+
+images:
+  - path: "artifacts/schp-website/public/images/hero-bg.png"
+    description: "Dark, moody, abstract technology background with deep blue and vibrant purple glowing digital lines and subtle geometric grids, representing high-tech software and AI solutions."
+    aspect_ratio: "16:9"
+  - path: "artifacts/schp-website/public/images/about-bg.png"
+    description: "Abstract glassmorphism rendering of interconnected network nodes in deep indigo and violet, professional enterprise technology vibe."
+    aspect_ratio: "16:9"
+
+notes:
+  - Frontend-only application using localStorage for state management (Reviews).
+  - WhatsApp integration via simple wa.me links.
+  - Admin panel is strictly client-side protected for demonstration purposes.
